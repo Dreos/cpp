@@ -1,19 +1,17 @@
-#ifndef DOG_H
-# define DOG_H
+#ifndef ANIMAL_H
+# define ANIMAL_H
 
-#include "Animal.hpp"
 #include <iostream>
 
-class Dog : public Animal
+class Animal
 {
 	protected :
 		std::string type;
 	public:
-		Dog(void);
-		~Dog(void);
+		Animal(void);
+		virtual ~Animal(void);
 
 		virtual void makeSound(void) const;
 		virtual std::string getType(void) const;
 };
-
 #endif

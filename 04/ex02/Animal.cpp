@@ -1,4 +1,5 @@
 #include "Animal.hpp"
+#include <iostream>
 
 Animal::Animal(void)
 {
@@ -14,7 +15,7 @@ void Animal::makeSound(void) const
 	std::cout << "An undefined animal does no sound you dumbass" << std::endl;
 	
 }
-std::string Animal::getType(void) const
+const std::string& Animal::getType(void) const
 {
 	return this->type;
 }

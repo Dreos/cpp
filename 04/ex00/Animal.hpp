@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-class Animal :
+class Animal
 {
 	protected :
 		std::string type;
@@ -11,7 +11,8 @@ class Animal :
 		Animal(void);
 		~Animal(void);
 
-		void makeSound(void);
+		virtual void makeSound(void) const;
+		virtual std::string getType(void) const;
 };
 
 #endif
